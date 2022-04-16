@@ -1,0 +1,12 @@
+CREATE TABLE series (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(30), tipo INT, total_episodios INT, episodios_assistidos INT, dia_assistido DATE);
+
+INSERT INTO series (nome, tipo, total_episodios, episodios_assistidos, dia_assistido)
+VALUES ('FUll Metal Achemist', 1, 48, 1, Now());
+
+INSERT INTO series (nome, tipo, dia_assistido)
+VALUES ('Your Name', 2, Now());
+
+SELECT * FROM series:
+
+SELECT nome, episodios_assistidos FROM series 
+WHERE tipo = 1;
